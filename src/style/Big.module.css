@@ -1,0 +1,166 @@
+.testimonial {
+  background: #111;
+  padding: 80px 0;
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* LEFT SIDE IMAGE */
+.testimonialleft img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+}
+
+/* RIGHT SIDE */
+.testimonialright {
+  flex: 1;
+}
+
+.subtitle {
+  color: orange;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.testimonialright h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* CARD */
+.testimonialcard {
+  background: #f5f5f5;
+  color: #333;
+  padding: 30px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.cardheader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.clientimg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.cardheader h5 {
+  margin: 0;
+}
+
+.cardheader span {
+  font-size: 12px;
+  color: gray;
+}
+
+.stars {
+  color: orange;
+  font-size: 14px;
+}
+
+.quote {
+  margin-left: auto;
+  font-size: 40px;
+  color: orange;
+}
+
+.cardtext {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+.arrowbuttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.arrowbuttons button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #222;
+  color: white;
+  transition: 0.3s;
+}
+
+.arrowbuttons .next {
+  background: red;
+}
+
+.arrowbuttons button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 320px) {
+  .container{
+    display: block;
+  }
+  .testimonialleft{
+    display: none;
+  }
+  .subtitle{
+    padding-left: 80px;
+  }
+  .testimonialright h2{
+    padding-left: 50px;
+    font-size: 40px; 
+        
+  }
+  .testimonialcard{
+    width: 290px;
+    margin-left: 15px;
+    height: 300px;
+  }
+  .arrowbuttons{
+    margin-left: 100px;
+    width: 200px;
+    
+  }
+  .prev{
+    width: 100px;
+  }
+  .arrowbuttons .next {
+  background: red;
+  width: 60px;
+  height: 60px;
+}
+.arrowbuttons .prev{
+   width: 60px;
+  height: 60px;
+}
+
+}
+/* tablet */
+@media screen and (min-width:768px) and (max-width:1024px) {
+.testimonialleft img {
+  display: none;
+}
+.testimonialcard{
+  width: 660px;
+  height: 300px;
+}
+.cardheader span{
+  font-size: 15px;
+}
+.cardtext{
+  font-size: 18px;
+}
+}
+

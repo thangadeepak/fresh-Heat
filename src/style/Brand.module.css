@@ -1,0 +1,47 @@
+.logowrapper {
+
+  overflow: hidden;
+  background: #f3efe9;
+  padding: 50px 0;
+  border-radius: 8px;
+}
+
+/* Track */
+.logotrack {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+/* Each Logo */
+.logoitem {
+  flex: 0 0 auto;
+  margin: 0 60px;
+}
+
+/* Image */
+.logoitem img {
+  width: 130px;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.4s ease;
+}
+
+/* Hover Effect */
+.logoitem img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Infinite Scroll Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+

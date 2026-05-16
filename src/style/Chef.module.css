@@ -1,0 +1,111 @@
+.chefSection {
+  padding: 80px 0;
+  text-align: center;
+  background: #f8f5ef;
+}
+
+.tag {
+  color: orange;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+
+.cardWrap {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  
+
+
+  
+}
+
+.card {
+  background: #fff;
+  width: 300px;
+  padding-bottom: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+
+.imgWrap {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-bottom-right-radius:100px ;
+}
+
+.imgWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CURVE COLOR */
+.imgWrap::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to right, orange, crimson);
+  
+}
+
+/* SHARE ICON */
+.share {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: orange;
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  z-index: 2;
+}
+
+/* TEXT */
+.card h4 {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #777;
+}
+
+/*media query  */
+@media screen and (max-width:320px) {
+  .cardWrap{
+      display: block;
+      
+  }
+  
+}
+
+/* tablet  */
+@media screen and (max-width:768px) and (max-width:1024px) {
+ .chefSection{
+  display: none;
+ }
+}

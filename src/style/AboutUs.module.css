@@ -1,0 +1,667 @@
+.bg {
+  background-image: url(../images/Aboutbg.jpg);
+  background-repeat: no-repeat;
+  position: center;
+  height: 350px;
+}
+
+.bg h1 {
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.bg p {
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+}
+
+#card {
+  background-image: url(../images/Aboutcardbg.jpg);
+  background-repeat: no-repeat;
+  position: center;
+  height: 250px;
+  width: 350px;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 30px;
+  
+}
+
+
+#btn {
+  height: 35px;
+  width: 120px;
+  margin-top: 10px;
+  margin-left: 20px;
+
+
+}
+
+#btn {
+  background-color: orange;
+  border: none;
+}
+
+#btn:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+#img1 {
+  width: 150px;
+  margin-top: 80px;
+  margin-left: -100px;
+}
+.img{
+  display: none;
+}
+
+#price {
+  padding-top: 50px;
+  padding-left: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+#time {
+  padding-left: 20px;
+  color: white;
+  font-weight: 900;
+
+}
+
+#special {
+  width: 300px;
+  padding-left: 20px;
+  font-weight: 900;
+  color: white;
+}
+
+#flex {
+  display: flex;
+  gap: 20px;
+  
+}
+
+#dflex {
+margin-top: 100px;
+  background-color: white;
+  width: 80%;
+
+}
+
+
+
+
+.title h5 {
+  padding-top: 100px;
+text-align: center;
+  color: orange;
+}
+
+.title h2 {
+
+  font-weight: 900;
+  text-align: center;
+}
+
+.title p {
+  text-align: center;
+  color: gray;
+}
+
+.order {
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+  background-color: #e4002b;
+  color: #fff;
+  border: none;
+  padding-left: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 410px;
+  margin-top: 30px;
+}
+
+.order .arrow {
+  height: 18px;
+  width: 18px;
+  background: #fff;
+  color: #e4002b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-left: 15px;
+
+}
+
+.order .text {
+  line-height: 48px;
+}
+
+.order:hover {
+  background-color: rgb(146, 146, 3);
+}
+
+.scrollWrap {
+  width: 100%;
+  overflow: hidden;
+  /* 👈 screen outside hide */
+}
+
+.scrollText {
+  white-space: nowrap;
+  /* 👈 single line */
+  font-size: 120px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.1);
+  /* faded look */
+  animation: moveLeft 12s linear infinite;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.main {
+  background-image: url(../images/bg.jpg);
+  height: 550px;
+  margin-top: 20px;
+  padding: 2% 0;
+  color: white;
+}
+
+#main2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content h5,
+h1 {
+  padding-top: 30px;
+}
+
+
+
+.content h5 {
+  color: #e4002b;
+}
+
+.order2 {
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+  background-color: #e4002b;
+  color: #fff;
+  border: none;
+  padding-left: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 50px;
+
+
+}
+
+.order2 .arrow2 {
+  height: 18px;
+  width: 18px;
+  background: #fff;
+  color: #e4002b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-left: 15px;
+
+}
+
+.order2:hover {
+  background-color: orange;
+}
+
+.our {
+  text-align: center;
+}
+
+.our h6 {
+  color: orange;
+  padding-top: 80px;
+}
+
+.chefsection {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.chefcontainer {
+  display: flex;
+  gap: 40px;
+}
+
+.chefcard {
+  position: relative;
+  width: 260px;
+}
+
+.chefcard img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* Bottom Info Box */
+#chefinfo {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  background: #f3f3f3;
+  padding: 15px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.chefinfo h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.chefinfo p {
+  margin-top: 5px;
+  font-size: 13px;
+  color: gray;
+}
+
+/* Red top border */
+.highlight {
+  border-top: 4px solid red;
+}
+
+
+.sharetext {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 11px;
+}
+
+#bannerbg {
+  background-image: url(../images/bannerbg1.png);
+  height: 450px;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+
+}
+
+#bannerbg h6 {
+  padding-top: 70px;
+  padding-left: 50px;
+  color: white;
+  font-weight: 600;
+}
+
+#bannerbg h2 {
+  padding-left: 50px;
+  color: white;
+  font-weight: 800;
+}
+
+.btnapple {
+  width: 120px;
+  background-color: transparent;
+  color: white;
+  margin-left: 50px;
+  border: white solid 1px;
+  border-radius: 30px;
+  font-weight: bolder;
+  margin-top: 50px;
+}
+
+.btnplay {
+  width: 190px;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  margin-left: 20px;
+  border: white solid 1px;
+  border-radius: 30px;
+  font-weight: bolder;
+  margin-top: 70px;
+}
+.ag{
+  display: flex;
+}
+
+.btnapple:hover {
+  background-color: red;
+}
+
+.btnplay:hover {
+  background-color: red;
+}
+
+.imgs {
+  margin-left: 350px;
+  display: flex;
+
+}
+
+.img1 {
+  height: 100px;
+  margin-top: 100px;
+}
+
+.img2 {
+  height: 270px;
+  margin-top: 80px;
+}
+
+
+
+.testimonial {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f6f2ea;
+  font-family: sans-serif;
+}
+
+.tag {
+  color: #ff7a00;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.divider {
+  width: 60%;
+  height: 1px;
+  background: #ccc;
+  margin: 20px auto;
+}
+
+.content {
+  max-width: 800px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.quote {
+  font-size: 60px;
+  color: #ff7a00;
+}
+
+.text {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.users {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.users img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.users img#active {
+  border: 3px solid #ff7a00;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.arrows {
+  margin-top: 20px;
+}
+
+.arrows button {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.arrows button:hover {
+  background: #ff7a00;
+  color: white;
+  border-color: #ff7a00;
+}
+
+/* mobile */
+@media screen and (max-width:425px) {
+.bg h1{
+  font-size: 24px;
+}
+  #card {
+    width: 100%;
+    display: block;
+    height: 490px;
+    background-color: #e4002b;
+    margin-left: -0px;
+   
+  }
+
+  #flex {
+    display: block;
+   
+
+  }
+
+  .img {
+    width: 90px;
+    margin-left: 30px;
+
+  }
+
+  #img1 {
+    margin-left: 60px;
+    width: 200px;
+  }
+
+  #dflex img {
+    display: none;
+
+  }
+#dflex{
+ margin-top: 90px;
+ height: 350px;
+}
+
+  .title h5 {
+   font-size: 22px;
+   padding-top: 30px;
+   
+  }
+
+  .title h2 {
+    font-size: 20px; 
+  }
+
+
+  .order {
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+
+  #pizza {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .order1 {
+    width: 80%;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .order2 {
+    height: 50px;
+    width: 200px;
+    justify-content: center;
+  }
+
+  #main2 {
+    display: block;
+  }
+
+  .chefcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 100px;
+   padding-left: 30px;
+  }
+
+  #bannerbg {
+    height: 600px;
+    background-color: #555;
+    width: 100%;
+  }
+
+  .btnapple {
+    width: 170px;
+    height: 80px;
+    background-color: red;
+    border-radius: 100px;
+  }
+
+  .btnplay {
+    width: 200px;
+    height: 80px;
+    border-radius: 100px;
+  }
+  .ag{
+    display: block;
+  }
+
+  .imgs {
+    display: none;
+  }
+}
+/* tablet */
+@media screen and (min-width:768px) and (max-width:1024px){
+
+#flex{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+#card{
+width:55%;
+}
+
+#dflex{
+display:block;
+text-align:center;
+margin-top:120px;
+}
+.img{
+  margin-left: -60px;
+}
+#img1{
+  margin-left: -60px;
+}
+
+#dflex img{
+display:none;
+}
+
+.title{
+margin:0;
+}
+
+.title h5{
+padding-left:0;
+text-align:center;
+}
+
+.title h2{
+text-align:center;
+}
+
+.title p{
+width:80%;
+margin:auto;
+}
+
+.order{
+margin:40px auto;
+display:flex;
+justify-content:center;
+}
+
+#main2{
+flex-direction:column;
+text-align:center;
+
+}
+
+#pizza{
+width:70%;
+margin:auto;
+margin-top:-50px;
+}
+
+.chefcontainer{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+#bannerbg{
+flex-direction:column;
+text-align:center;
+height:auto;
+padding:40px;
+}
+
+.imgs{
+display:none;
+}
+
+.btnapple,
+.btnplay{
+margin-top:20px;
+}
+
+}

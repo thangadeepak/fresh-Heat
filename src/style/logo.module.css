@@ -1,0 +1,107 @@
+/* --- DEFAULT: LAPTOP VIEW (1024px and above) --- */
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color: #010135;
+  /* Dark Blue like Fresheat */
+  padding: 0 40px;
+  width: 100%;
+}
+
+.logowrap {
+  background: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.logo {
+  width: 130px;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.rightGroup {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.menuToggle {
+  display: none;
+}
+
+/* --- TABLET VIEW */
+@media screen and (max-width: 768px) {
+  .navContainer {
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  .menuToggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background: white;
+  }
+
+  .logowrap {
+    padding: 0 20px;
+  }
+}
+
+/* --- MOBILE VIEW */
+@media screen and (max-width: 320px) {
+  .navContainer {
+    background-color: white;
+    height: 70px;
+  }
+
+  .logowrap {
+    clip-path: none;
+    padding: 0 10px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .rightGroup {
+    color: #333;
+    gap: 12px;
+  }
+
+  .bar {
+    background: #333;
+  }
+}

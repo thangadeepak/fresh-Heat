@@ -1,0 +1,188 @@
+#white {
+  background-color: white;
+
+}
+
+.menu h5 {
+  text-align: center;
+  color: orange;
+
+
+}
+
+.menu {
+  text-align: center;
+  padding-top: 40px;
+}
+
+#topmenu {
+  justify-content: center;
+  padding-left: 30px;
+  margin-top: 30px;
+  display: flex;
+}
+
+#topmenu h6 {
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 10px;
+  border-right: 1px dotted black;
+  border-width: 3px;
+  display: flex;
+
+}
+
+#topmenu img {
+  padding-left: 40px;
+}
+.menulist{
+  display: flex;
+  margin-left: 00px;
+}
+
+.menuitem1 h6 {
+  padding-top: 10px;
+  font-size: 22px;
+  padding-left: 10px;
+}
+
+.menuitem1 p {
+  padding-left: 20px;
+  font-size: 12px;
+
+}
+
+.menuitem2 {
+  padding-left: 150px;
+  padding-top: 20px;
+}
+
+.map {
+  margin-left: 200px;
+  margin-top: 50px;
+  gap: 30px;
+
+}
+
+.map1 {
+  margin-left: 100px;
+  margin-top: 50px;
+  gap: 20px;
+
+}
+
+.menuitem {
+  padding-top: 15px;
+  display: flex;
+
+}
+
+.scrollWrap {
+  width: 100%;
+  overflow: hidden;
+  /* 👈 screen outside hide */
+}
+
+.scrollText {
+  white-space: nowrap;
+  /* 👈 single line */
+  font-size: 120px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.1);
+  /* faded look */
+  animation: moveLeft 12s linear infinite;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Media query */
+@media screen and (max-width:320px) {
+  #topmenu {
+    display: block;
+
+  }
+
+  #topmenu img {
+    order: -1;
+    margin-left: -300px;
+   
+  }
+
+  #topmenu h6 {
+    border: none;
+    padding-top:-100px;
+    padding-left: 30px;
+  }
+  .fast{
+    margin-top: -30px;
+  }
+  .colo{
+    margin-top: -50px;
+  }
+  .drink{
+    margin-top: 40px;
+  }
+  #drink{
+    margin-top: -30px;
+  }
+  .pizza{
+    margin-top: 40px;
+  }
+  #pizza{
+    margin-top: -40px;
+    margin-left: 10px;
+  }
+  .fresh{
+    margin-top: 50px;
+  }
+  #fresh{
+    margin-top: -40px;
+  }
+  .menulist{
+    display: block;
+  }
+  .menuitem{
+    display: block;
+  }
+  .menuitem1{
+    margin-top: -80px;
+  }
+  .menuitem2{
+    margin-left: -120px;
+    margin-top: -20px;
+  }
+  .img{
+    margin-left: -250px;
+  }
+  .map{
+    display: none;
+  }
+}
+/* tablet  */
+@media screen and (min-width:768px) {
+.map{
+  display: none;
+}
+.menuitem2{
+  margin-left: 180px;
+  font-size: large;
+}
+#font{
+  font-size: 20px;
+}
+  .menuitem{
+    margin-left: -80px;
+  }
+  #white{
+    height: 950px;
+    border-radius: 50px;
+  }
+}

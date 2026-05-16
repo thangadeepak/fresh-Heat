@@ -1,0 +1,165 @@
+.contactContainer {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    padding-bottom: 80px;
+    background-color: #fcfcfc;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../images/bg.jpg') center/cover;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.header p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.mainContent {
+    max-width: 1200px;
+    margin: -50px auto 0;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.infoSection {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.infoSection h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.infoItem {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #ff4d4d;
+    background: rgba(255, 77, 77, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.infoText h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.infoText p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.formSection {
+    background: #fff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.formSection h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.formSection > p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.formGroup {
+    margin-bottom: 25px;
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: #ff4d4d;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(255, 77, 77, 0.1);
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.submitBtn {
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 16px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.submitBtn:hover {
+    background: #e60000;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 77, 77, 0.2);
+}
+
+@media (max-width: 992px) {
+    .mainContent {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .formSection {
+        padding: 30px;
+    }
+}
