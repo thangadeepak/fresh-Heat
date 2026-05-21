@@ -1,18 +1,38 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import style from '../style/Card.module.css'
 import cardimg from '../images/cardimg.jpg'
 
 const Card = () => {
   const scrollRef = useRef();
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const { current } = scrollRef;
+      if (current) {
+        const isMobile = window.innerWidth <= 768;
+        const scrollAmount = isMobile ? 275 : 350; // card width + gap
+        
+        // If we reached the end of the scroll (with 10px buffer), loop back to the start
+        if (current.scrollLeft + current.clientWidth >= current.scrollWidth - 15) {
+          current.scrollLeft = 0;
+        } else {
+          current.scrollLeft += scrollAmount;
+        }
+      }
+    }, 3000); // Auto scroll every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   const scroll = (direction) => {
     const { current } = scrollRef;
-    const scrollAmount = 350;
+    const isMobile = window.innerWidth <= 768;
+    const scrollAmount = isMobile ? 275 : 350;
 
     if (direction === "left") {
-      current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      current.scrollLeft -= scrollAmount;
     } else {
-      current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      current.scrollLeft += scrollAmount;
     }
   };
 

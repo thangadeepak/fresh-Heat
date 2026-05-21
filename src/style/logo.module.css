@@ -8,6 +8,9 @@
   /* Dark Blue like Fresheat */
   padding: 0 40px;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logowrap {
@@ -54,6 +57,10 @@
   .navContainer {
     height: 80px;
     padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
 
   .desktopMenu {
@@ -81,10 +88,14 @@
 }
 
 /* --- MOBILE VIEW */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .navContainer {
     background-color: white;
     height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
 
   .logowrap {
@@ -104,4 +115,46 @@
   .bar {
     background: #333;
   }
+}
+
+/* --- MOBILE SIDE MENU --- */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #010135;
+  z-index: 1000;
+  padding: 80px 20px 20px;
+  box-shadow: 5px 0 15px rgba(0,0,0,0.5);
+}
+
+.mobileNavLinks {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobileNavLinks a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: block;
+}
+
+.closeMenuBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  line-height: 1;
 }

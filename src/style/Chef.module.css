@@ -95,7 +95,7 @@
 }
 
 /*media query  */
-@media screen and (max-width:320px) {
+@media screen and (max-width:768px) {
   .cardWrap{
       display: block;
       

@@ -312,10 +312,11 @@ h1 {
   background-image: url(../images/bannerbg1.png);
   height: 450px;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin-top: 100px;
   margin-bottom: 50px;
   display: flex;
-
 }
 
 #bannerbg h6 {
@@ -506,7 +507,8 @@ h2 {
   }
 #dflex{
  margin-top: 90px;
- height: 350px;
+ height: auto;
+ padding-bottom: 30px;
 }
 
   .title h5 {
@@ -554,7 +556,9 @@ h2 {
   }
 
   #bannerbg {
-    height: 600px;
+    height: auto;
+    min-height: 400px;
+    padding-bottom: 40px;
     background-color: #555;
     width: 100%;
   }

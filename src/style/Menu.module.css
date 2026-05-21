@@ -37,7 +37,8 @@
 }
 .menulist{
   display: flex;
-  margin-left: 00px;
+  justify-content: center;
+  margin-left: 0px;
 }
 
 .menuitem1 h6 {
@@ -65,7 +66,7 @@
 }
 
 .map1 {
-  margin-left: 100px;
+  margin-left: 0px;
   margin-top: 50px;
   gap: 20px;
 
@@ -104,65 +105,88 @@
 }
 
 /* Media query */
-@media screen and (max-width:320px) {
+@media screen and (max-width:768px) {
   #topmenu {
-    display: block;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    align-items: center;
   }
 
   #topmenu img {
-    order: -1;
-    margin-left: -300px;
-   
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    height: auto;
   }
 
-  #topmenu h6 {
+  #topmenu h6, .fast, .colo, .drink, .pizza, .fresh {
     border: none;
-    padding-top:-100px;
-    padding-left: 30px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
   }
-  .fast{
-    margin-top: -30px;
-  }
-  .colo{
-    margin-top: -50px;
-  }
-  .drink{
-    margin-top: 40px;
-  }
-  #drink{
-    margin-top: -30px;
-  }
-  .pizza{
-    margin-top: 40px;
-  }
-  #pizza{
-    margin-top: -40px;
-    margin-left: 10px;
-  }
-  .fresh{
-    margin-top: 50px;
-  }
-  #fresh{
-    margin-top: -40px;
-  }
-  .menulist{
+
+  .menulist {
     display: block;
+    margin: 0;
+    padding: 0 10px;
   }
-  .menuitem{
-    display: block;
+
+  .map1 {
+    margin: 0;
   }
-  .menuitem1{
-    margin-top: -80px;
+
+  .menuitem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    margin: 0;
   }
-  .menuitem2{
-    margin-left: -120px;
-    margin-top: -20px;
+
+  .menuitem1 {
+    flex: 1;
+    text-align: left;
+    margin: 0;
+    padding-left: 15px;
   }
-  .img{
-    margin-left: -250px;
+
+  .menuitem1 h6 {
+    padding: 0;
+    font-size: 18px;
+    margin: 0 0 5px 0;
   }
-  .map{
+
+  .menuitem1 p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .menuitem2 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .menuitem2 h6 {
+    font-size: 16px;
+    margin: 0;
+    color: orange;
+  }
+
+  .img {
+    margin: 0;
+    width: 60px;
+    height: auto;
+  }
+
+  .map {
     display: none;
   }
 }
@@ -179,7 +203,7 @@
   font-size: 20px;
 }
   .menuitem{
-    margin-left: -80px;
+    margin-left: 0px;
   }
   #white{
     height: 950px;

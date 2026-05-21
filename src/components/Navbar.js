@@ -1,10 +1,16 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.svg';
 import style from '../style/logo.module.css';
 
 function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <motion.div 
       initial={{ y: -100 }} 
@@ -45,12 +51,35 @@ function Navbar() {
         </div>
 
         {/* Hamburger - Visible on Mobile & Tablet (Under 1024px) */}
-        <button className={style.menuToggle} type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+        <button className={style.menuToggle} type="button" onClick={toggleMobileMenu}>
           <span className={style.bar}></span>
           <span className={style.bar}></span>
           <span className={style.bar}></span>
         </button>
       </div>
+
+      {/* Mobile Side Menu */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div 
+            className={style.mobileMenu}
+            initial={{ x: '-100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '-100%' }}
+            transition={{ type: 'tween', duration: 0.3 }}
+          >
+            <button className={style.closeMenuBtn} onClick={toggleMobileMenu}>&times;</button>
+            <ul className={style.mobileNavLinks}>
+              <li><Link to="/" onClick={toggleMobileMenu}>Home</Link></li>
+              <li><Link to="/AboutUs" onClick={toggleMobileMenu}>About Us</Link></li>
+              <li><Link to="/Shop" onClick={toggleMobileMenu}>Shop</Link></li>
+              <li><Link to="/Pages" onClick={toggleMobileMenu}>Pages</Link></li>
+              <li><Link to="/Blog" onClick={toggleMobileMenu}>Blog</Link></li>
+              <li><Link to="/ContactUs" onClick={toggleMobileMenu}>Contact Us</Link></li>
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 }
