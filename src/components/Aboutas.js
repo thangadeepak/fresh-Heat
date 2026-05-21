@@ -12,7 +12,7 @@ import Menu from './Menu'
 function Aboutas() {
     const food = [
         { id: 1, name: "Chicken Fried Rice", sub: "The Registration Fee", price: "$100.99", img: rice },
-        { id: 2, name: "Chinese Pasta", sub: "The Registration Fee", price: "$15.99", img: pastha },
+        { id: 2, name: "Chinese Pasta", sub: "The Registration Fee", price: "$15.99", img: Pastha },
         { id: 3, name: "Chicken Pizza", sub: "The Registration Fee", price: "$100.99", img: pizza },
         { id: 4, name: "Chicken Noodles", sub: "The Registration Fee", price: "$200.99", img: noodles },
         { id: 5, name: "Chinese 65", sub: "Special Offer", price: "$15.99", img: fry }
@@ -133,4 +133,4 @@ function Aboutas() {
     )
 }
 
-export default Aboutas
+export default Aboutas
